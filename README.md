@@ -1,21 +1,2 @@
-AD-RiskGenePredictor is an open-source framework integrating Mendelian Randomization (MR), Differential Expression Analysis, and Weighted Gene Co-expression Network Analysis (WGCNA) with multi-algorithm machine learning to identify causally relevant genes and construct an early diagnostic model for Alzheimer’s disease (AD).
-
-This pipeline enables:
-
-Discovery of core AD risk genes through causal inference and network biology.
-
-Functional annotation via GO/KEGG enrichment and immune infiltration profiling.
-
-Feature selection across eight machine learning algorithms to ensure model robustness.
-
-Construction and validation of a Nomogram diagnostic model based on multi-omics biomarkers.
-
-Key findings:
-
-Five diagnostic feature genes (VASP, PIP4K2A, RRP36, METTL7A, AP2M1) were identified.
-
-The Nomogram model achieved an AUC of 0.964 in an external cohort.
-
-RRP36 and PIP4K2A emerged as potential mechanistic drivers of AD pathogenesis, implicating roles in cytoskeletal remodeling, neuroinflammation, and synaptic dysfunction.
-
-This repository provides scripts, processed data matrices, and reproducible workflows to facilitate future biomarker discovery and precision intervention research in neurodegenerative diseases.
+AD RiskGenePredictor是一个开源框架，将孟德尔随机化（MR）、差异表达分析和加权基因共表达网络分析（WGCNA）与多算法机器学习相结合，用于识别因果相关基因并构建阿尔茨海默病（AD）的早期诊断模型。
+主要实现：通过因果推理和网络生物学发现核心AD风险基因；通过GO/KEGG富集和免疫浸润分析进行功能注释；通过八种机器学习算法进行特征选择，以确保模型的鲁棒性；基于多组学生物标志物的诺模图诊断模型的构建和验证。
