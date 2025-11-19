@@ -142,6 +142,22 @@ explainer_dt=explain(mod_dt, label = "DT",
                      verbose = FALSE)
 mp_dt=model_performance(explainer_dt)
 
+saveRDS(mod_rf, file="RF_final_model.rds")
+saveRDS(mod_rf, file="RF_final_model.rds")
+saveRDS(mod_svm, file="SVM_final_model.rds")
+saveRDS(mod_xgb, file="XGB_final_model.rds")
+saveRDS(mod_glm, file="GLM_final_model.rds")
+saveRDS(mod_gbm, file="GBM_final_model.rds")
+saveRDS(mod_knn, file="KNN_final_model.rds")
+saveRDS(mod_nnet, file="NNET_final_model.rds")
+saveRDS(mod_lasso, file="LASSO_final_model.rds")
+saveRDS(mod_dt, file="DT_final_model.rds")
+
+# 保存训练集特征顺序（外部验证必须严格对齐）
+train_features = colnames(train)[colnames(train)!="Type"]
+write.table(train_features, file="RF_features.txt",
+            quote=FALSE, row.names=FALSE, col.names=FALSE)
+
 # 绘制残差反向累计分布图
 pdf(file="residual.pdf", width=6, height=6)
 p1 <- plot(mp_rf, mp_svm, mp_xgb, mp_glm, mp_gbm, mp_knn, mp_nnet,mp_lasso)
